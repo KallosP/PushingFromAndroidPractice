@@ -44,6 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        // Add custom styles imported from cool people.com
         googleMap.setMapStyle(
                 MapStyleOptions.loadRawResourceStyle(this, R.raw.custom_map_style)
         );
@@ -52,13 +53,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-34, 151);
         LatLng avc = new LatLng(34.6773, -118.1866);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(avc).title("Marker in Los Angeles"));
+        mMap.addMarker(new MarkerOptions().position(avc).title("Marker at our beautiful college"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(avc, 20f));
-        
-        //This is new sick code
-        //More new code
-        
-        //System.out.print("Google");
 
     }
 }
