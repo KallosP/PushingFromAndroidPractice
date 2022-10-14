@@ -57,7 +57,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         
         //This is new sick code
         //More new code
-
+        
+        //System.out.print("Google");
 
     }
 }
